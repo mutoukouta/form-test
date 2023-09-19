@@ -1,0 +1,33 @@
+①　フォーム設定
+下記ファイルの設定を行う
+・フォーム全般定義
+form-setting.php
+
+・バリデーションルール
+form-validate.json
+
+・管理者宛てテンプレート
+mail-template/admin.tpl
+
+・問い合わせ者宛てテンプレート
+mail-template/user.tpl
+
+
+②　メールフォームの指定
+form action を　form/mailform.php にする（ディレクトリ名などで適宜調整）
+
+
+③　JSの埋め込み
+以下のタグをHTMLの最後に挿入する。
+※google reCAPCHAを使わない場合は最初のスクリプトは不要
+---------------------------------------------------------------------------
+<!-- Load:Form Start -->
+<script src="https://www.google.com/recaptcha/enterprise.js?render={キーID}"></script>
+<script src="form/js/jquery-validate/jquery.validate.js"              data-org-src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script><!-- jQueryValidate:core -->
+<script src="form/js/jquery-validate/localization/messages_ja.min.js" data-org-src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/localization/messages_ja.min.js"></script><!-- jQueryValidate:lang JA -->
+<script src="form/js/jquery-validate/additional-methods.js"           data-org-src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js"></script><!-- jQueryValidate:additionalMethod -->
+<script src="form/js/sweetalert2/sweetalert2.js"                      data-org-src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!-- sweerAlert2 -->
+<script src="form/js/form-common.js.php"></script>
+<!-- Load:Form End -->
+---------------------------------------------------------------------------
+

@@ -1,0 +1,13 @@
+// 使用JSライブラリ
+・jQueryValidate　コアプログラム(form/js/jquery-validate/jquery.validate.js)
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js
+
+・jQueryValidate　日本語パック(form/js/jquery-validate/localization/messages_ja.min.js)
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/localization/messages_ja.min.js
+
+・jQueryValidate　追加メソッド(form/js/jquery-validate/additional-methods.js)
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js
+
+・Sweet Alert2 (form/js/sweetalert2/sweetalert2.js)
+https://cdn.jsdelivr.net/npm/sweetalert2@11
+
